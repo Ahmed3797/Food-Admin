@@ -9,9 +9,7 @@ const useFetch = (url,options) => {
     const fetchData = async () => {
       setLoading(true);
       setError(null);
-      console.log("I am running agin in fetch data function ")
       try {
-        console.log("I am running agin in try ")
         const response = await fetch(url,options);
 
         if (!response.ok) {
