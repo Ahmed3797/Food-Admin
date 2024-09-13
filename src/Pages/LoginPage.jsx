@@ -1,6 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify"; 
+import 'react-toastify/dist/ReactToastify.css';
 
 const LoginPage = () => {
   const {
@@ -11,20 +13,19 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const URL = import.meta.env.VITE_URL;
   const onSubmit = (data) => {
-    console.log(data);
 
     let url = `${URL}/api/users/login/admin`;
     fetch(url, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json", // Set content type to JSON
+        "Content-Type": "application/json", 
       },
       body: JSON.stringify(data),
     })
       .then(async (response) => {
         if (response.ok) {
           const data = await response.json();
-
+           console.log(response.status)
           const { token } = data;
           const now = new Date().getTime();
           localStorage.setItem("authToken", token);
@@ -33,7 +34,6 @@ const LoginPage = () => {
 
           navigate("/list");
         }
-        console.log(response);
       })
       .catch((error) => {
 
