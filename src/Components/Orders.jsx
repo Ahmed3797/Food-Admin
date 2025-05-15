@@ -14,8 +14,8 @@ const Orders = ({item}) => {
   }
 
   return (
-    <div className='my-3 flex flex-wrap justify-between p-1 md:p-3 border-2 border-[#508C9B] items-center'>
-      <p className='text-center'><FaBoxOpen color="#134B70" size="3em"/></p>
+    <div className='my-3 flex flex-wrap justify-between p-1 md:p-3 border-2 border-[#d56b6e] items-center'>
+      <p className='text-center'><FaBoxOpen color="#FFCDB2" size="3em"/></p>
 
       <div className='flex flex-wrap justify-between items-center w-full md:w-[90%]' >
      <div>
