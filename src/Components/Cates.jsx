@@ -98,7 +98,7 @@ const Cates = ({ categories }) => {
               {errors.desc && <p>{errors.desc.message}</p>}
               <br />
               <input
-                className="my-2 bg-[#134B70] text-white w-[160px] p-2 cursor-pointer hover:bg-[#152d3c]"
+                className="my-2 bg-[#FFCDB2] text-white w-[160px] p-2 cursor-pointer hover:bg-[#152d3c]"
                 type="submit"
                 value="ADD CATEGORY"
               />

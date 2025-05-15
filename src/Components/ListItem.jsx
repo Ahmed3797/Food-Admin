@@ -16,7 +16,7 @@ const ListItem = () => {
           visible={true}
           height="80"
           width="80"
-          color="#134B70"
+          color="#FFCDB2"
           radius="9"
           ariaLabel="three-dots-loading"
           wrapperStyle={{}}
@@ -59,7 +59,7 @@ const ListItem = () => {
       <div className="container mx-auto ">
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white border-2 rounded-md border-gray-200">
-            <thead className="bg-[#508C9B] text-center">
+            <thead className="bg-[#d56b6e] text-center">
               <tr>
                 <th className="py-2 px-8 border-b ">Item</th>
                 <th className="py-2 px-4 border-b ">Title</th>

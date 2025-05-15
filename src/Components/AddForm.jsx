@@ -166,7 +166,7 @@ const AddForm = ({ categories, isEditing = false, data: editformdata }) => {
         <br />
 
         <input
-          className="my-2 bg-[#134B70] text-white w-[100px] p-2 hover:bg-[#152d3c] cursor-pointer"
+          className="my-2 bg-[#FFCDB2] text-white w-[100px] p-2 hover:bg-[#d56b6e] cursor-pointer"
           type="submit"
           value={isEditing ? "Update" : "Add"}
         />

@@ -22,7 +22,7 @@ const OrdersComponent = () => {
           visible={true}
           height="80"
           width="80"
-          color="#134B70"
+          color="#FFCDB2"
           radius="9"
           ariaLabel="three-dots-loading"
           wrapperStyle={{}}
